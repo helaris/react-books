@@ -1,0 +1,12 @@
+form {
+  width: 600px;
+  margin: 40px auto;
+}
+
+.input {
+  width: 80%;
+}
+
+.search__btn {
+  padding: 14px 24px !important;
+}
