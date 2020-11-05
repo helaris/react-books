@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="header__container">
       <section className="header__text">
-        <h1>Are you a person who likes to read?</h1>
+        <h1>Are you a person who loves to read?</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit quos consequatur vero adipisci vel praesentium non aut perferendis natus? Aut esse assumenda cupiditate culpa maxime, perferendis quidem animi qui.</p>
       </section>
       <div className="header__image">

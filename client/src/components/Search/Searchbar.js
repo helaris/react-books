@@ -16,21 +16,24 @@ function Searchbar({ handleChange }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <TextField
-        width="75%"
-        id="outlined-search"
-        label="Search field"
-        variant="outlined"
-        className="input"
-        type="text"
-        value={input}
-        onChange={handlingChange}
-      />
-      <Button onClick={handleSubmit} className="search__btn" variant="contained" color="primary" size="large">
-        Search
+    <section>
+      <h1 className="search__heading">Search for any book you like</h1>
+      <form onSubmit={handleSubmit}>
+        <TextField
+          width="75%"
+          id="outlined-search"
+          label="Search field"
+          variant="outlined"
+          className="input"
+          type="text"
+          value={input}
+          onChange={handlingChange}
+        />
+        <Button onClick={handleSubmit} className="search__btn" variant="contained" color="primary" size="large">
+          Search
       </Button>
-    </form>
+      </form>
+    </section>
   )
 }
 

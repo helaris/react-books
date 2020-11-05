@@ -25,8 +25,12 @@ function Books({ books }) {
           key={book.id}
           title={book.volumeInfo.title}
           image={book.volumeInfo.imageLinks?.thumbnail}
-          author={book.volumeInfo.authors}
+          author={book.volumeInfo.authors[0]}
           description={book.volumeInfo.description}
+          published={book.volumeInfo.publishedDate}
+          pages={book.volumeInfo.pageCount}
+          preview={book.volumeInfo.previewLink}
+          language={book.volumeInfo.language}
         />
       ))}
     </section>
