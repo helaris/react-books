@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import './Seachbar.css';
@@ -9,8 +9,13 @@ function Searchbar({ handleChange }) {
     setInput(e.target.value);
   };
 
+  useEffect(() => {
+    setInput('')
+    handleSubmit()
+  }, [])
+
   const handleSubmit = (e) => {
-    e.preventDefault();
+    if (e) e.preventDefault();
     handleChange(input);
     setInput('');
   };
