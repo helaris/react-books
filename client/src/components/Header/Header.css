@@ -1,9 +1,9 @@
-.header__container {
+.header__items {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 95vh;
 }
 
 .header__text {
@@ -24,5 +24,35 @@
 
 .header__image {
   max-width: 50%;
-  fill: aliceblue;
+}
+
+/* @media (min-width: 840px) and (max-width: 1280px) {
+  .books__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 839px) {
+  .books__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+@media (min-width: 320px) and (max-width: 839px) {
+  .header__text {
+    text-align: center;
+    order: 1;
+  }
+  .header__image {
+    width: 100%;
+    object-fit: contain;
+  }
+  .header__text h1 {
+    font-size: 2rem;
+  }
+  .header__text p {
+    margin-top: 20px;
+    line-height: 1.5;
+    padding: 0px 20px;
+  }
 }

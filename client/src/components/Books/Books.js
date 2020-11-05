@@ -1,23 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Book from './Book';
 
 import './Books.css';
 
 function Books({ books }) {
-  console.log(books)
-  // const [books, setBooks] = useState([]);
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const result = await fetch('http://localhost:5000/api/books')
-  //       .then(response => response.json())
-  //       .then(data => setBooks(data));
-  //     return result;
-  //   }
-  //   fetchData();
-  // }, []);
-
-  // console.log(books)
   return (
     <section className="books__container">
       {books.map(book => (

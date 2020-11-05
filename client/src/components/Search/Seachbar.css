@@ -25,3 +25,17 @@ form {
 .search__btn {
   padding: 14px 24px !important;
 }
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .search__heading {
+    font-size: 2rem;
+  }
+  .search__heading:after {
+    width: 120px;
+    height: 4px;
+  }
+  .input {
+    width: 60%;
+    margin-left: 20px !important;
+  }
+}
