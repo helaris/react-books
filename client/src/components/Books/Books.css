@@ -1,20 +1,158 @@
 .books__container {
   width: 90%;
-  margin: auto;
+  margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
+  grid-gap: 20px;
 }
 
 .card__container {
-  max-width: 375px;
-  min-height: 300px;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.2) !important;
+  justify-content: space-evenly;
 }
 
 .card__image {
   width: 100%;
   object-fit: contain;
-  max-height: 200px;
-  padding: 10px;
+  max-height: 250px;
+  padding: 20px;
+  transition: all 500ms;
+}
+
+.card__image:hover {
+  transform: scale(1.2);
+}
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card__author {
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+
+.learn__btn {
+  margin: 20px 10px !important;
+}
+
+.card__description {
+  color: #2f4858c3;
+  font-size: 0.8rem;
+}
+
+.modal {
+  background-color: #F7F5DD;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #2F4858;
+  -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.modal>.header {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0;
+  padding: 0px 40px;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #2F4858;
+  margin: 10px auto;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.modal>.actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.popup__info {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.preview__btn {
+  margin-top: 10px !important;
+}
+
+.preview__btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.popup__text {
+  margin-left: 20px;
+}
+
+.popup__text h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.popup__text p {
+  font-size: 0.8rem;
+  padding: 5px 0px;
+}
+
+.modal>.close {
+  cursor: pointer;
+  position: absolute;
+  color: #2F4858;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 10px;
+  top: 10px;
+  font-size: 3rem;
+  border-radius: 18px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+@keyframes anvil {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
