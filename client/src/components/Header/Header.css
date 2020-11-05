@@ -1,0 +1,27 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header__text {
+  color: #2F4858;
+  max-width: 500px;
+}
+
+.header__text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.header__text p {
+  color: #2f4858b7;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.header__image {
+  max-width: 50%;
+  fill: aliceblue;
+}

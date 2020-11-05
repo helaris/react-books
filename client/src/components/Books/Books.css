@@ -1,0 +1,20 @@
+.books__container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.card__container {
+  max-width: 375px;
+  min-height: 300px;
+  margin: 20px;
+}
+
+.card__image {
+  width: 100%;
+  object-fit: contain;
+  max-height: 200px;
+  padding: 10px;
+}

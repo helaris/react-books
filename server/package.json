@@ -1,0 +1,20 @@
+{
+  "name": "book-app",
+  "version": "1.0.0",
+  "description": "Book search application",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Helari Sosi",
+  "license": "MIT"
+}

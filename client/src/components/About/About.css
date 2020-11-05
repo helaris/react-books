@@ -1,0 +1,26 @@
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #004D73;
+}
+
+.about__text {
+  color: #fff;
+  order: 1;
+  max-width: 500px;
+}
+
+.about__text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.about__text p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.about__image {
+  width: 45%;
+}
