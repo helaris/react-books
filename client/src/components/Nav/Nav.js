@@ -4,20 +4,21 @@ import './Nav.css';
 
 
 function Nav() {
-  const [show, handleShow] = useState(false);
+  // const [show, handleShow] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        handleShow(true);
-      } else handleShow(false);
-    });
-    return () => {
-      window.removeEventListener('scroll');
-    }
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', () => {
+  //     if (window.scrollY > 40) {
+  //       handleShow(true);
+  //     } else handleShow(false);
+  //   });
+  //   return () => {
+  //     window.removeEventListener('scroll');
+  //   }
+  // }, []);
+  // className={`nav__container ${show && 'nav__black'}`}
   return (
-    <nav className={`nav__container ${show && 'nav__black'}`}>
+    <nav className='nav__container'>
       <div className="logo">
         <h1>LOGO</h1>
       </div>

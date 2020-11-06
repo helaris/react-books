@@ -4,6 +4,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import Popup from 'reactjs-popup';
 
 import './Books.css';
@@ -20,7 +22,7 @@ function Book({ title, image, author, description, published, pages, preview, la
       <CardContent>
         <h1 className="card__title">{title}</h1>
         <p className="card__author">Author {author}</p>
-        <p className="card__description">{truncate(description, 100)}</p>
+        {description ? <p className="card__description">{truncate(description, 100)}</p> : <p className="card__description">No description available</p>}
       </CardContent>
       <CardActions>
         <Popup
@@ -49,13 +51,16 @@ function Book({ title, image, author, description, published, pages, preview, la
                 </div>
                 <div className="content">
                   <h3>Desctiption:</h3>
-                  <p>{description}</p>
+                  {description ? <p>{description}</p> : <p>No description available</p>}
                 </div>
               </section>
             </div>
 
           )}
         </Popup>
+        <IconButton aria-label="add to favorites">
+          <FavoriteIcon />
+        </IconButton>
       </CardActions>
     </Card>
   )

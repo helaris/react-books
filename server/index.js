@@ -9,7 +9,7 @@ const API_KEY = process.env.API_KEY;
 app.use(cors());
 
 app.get('/api/books', (req, res) => {
-  api_helper.make_API_call(`https://www.googleapis.com/books/v1/volumes?q=popular&key=${API_KEY}&maxResults=16`)
+  api_helper.make_API_call(`https://www.googleapis.com/books/v1/volumes?q=horror&key=${API_KEY}&maxResults=16`)
     .then(response => {
       res.json(response.items)
     })
