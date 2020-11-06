@@ -7,7 +7,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="header__container">
-      <Nav />
+      {/* <Nav /> */}
       <div className="header__items">
         <section className="header__text">
           <h1>Are you a person who loves to read?</h1>

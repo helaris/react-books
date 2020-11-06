@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
 import './Seachbar.css';
 
 function Searchbar({ handleChange }) {
@@ -21,7 +20,7 @@ function Searchbar({ handleChange }) {
   };
 
   return (
-    <section>
+    <section className="searchbar__container">
       <h1 className="search__heading">Search for any book you like</h1>
       <form onSubmit={handleSubmit}>
         <TextField
@@ -34,9 +33,7 @@ function Searchbar({ handleChange }) {
           value={input}
           onChange={handlingChange}
         />
-        <Button onClick={handleSubmit} className="search__btn" variant="contained" color="primary" size="large">
-          Search
-      </Button>
+        <button onClick={handleSubmit} className="search__btn">Search</button>
       </form>
     </section>
   )
